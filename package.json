@@ -1,0 +1,27 @@
+{
+  "name": "godface.tv",
+  "version": "0.0.1",
+  "description": "see the face of god.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "godface"
+  ],
+  "author": "albert omoss",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "~3.5.2",
+    "gulp-livereload": "~1.1.1",
+    "tiny-lr": "0.0.5",
+    "gulp-clean": "~0.2.4",
+    "gulp-minify-css": "~0.3.0",
+    "gulp-uglify": "~0.2.1",
+    "gulp-autoprefixer": "0.0.6",
+    "gulp-rename": "~1.1.0",
+    "gulp-concat": "~2.1.7",
+    "gulp-cache": "~0.1.2",
+    "gulp-jshint": "~1.4.2"
+  }
+}
