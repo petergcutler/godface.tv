@@ -9,7 +9,7 @@
   "keywords": [
     "godface"
   ],
-  "author": "albert omoss",
+  "author": "Albert Omoss",
   "license": "MIT",
   "devDependencies": {
     "gulp": "~3.5.2",
