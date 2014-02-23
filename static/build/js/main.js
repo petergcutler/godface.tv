@@ -7,6 +7,7 @@ var GODFACE = (function(){
     var gr = 2.39996; // golden angle in radians
 
     var cw, ch, cx, cy, cs, radius, theta, i, sMult, tx, ty, spacing, delta, pos;
+    var drawsize = 0, rdsize = 0, halfds = 0;
 
     var prevTime = 0, frame = 0, tick = 0, offset = 0;
     var speedMult = 0.01;
@@ -49,9 +50,6 @@ var GODFACE = (function(){
         return { x: tx, y: ty };
     };
 
-    var drawsize = 0;
-    var rdsize = 0;
-    var halfds = 0;
     g.draw = function(curTime){
         ctx.setTransform(1, 0, 0, 1, 0, 0);
         ctx.clearRect(0, 0, cw, ch);
@@ -112,7 +110,10 @@ window.onload = function(){
         intro.style.animationPlayState = 'running';
         intro.style.MozAnimationPlayState = 'running';
         intro.style.webkitAnimationPlayState = 'running';
-        window.setTimeout(function(){ intro.parentNode.removeChild(intro); GODFACE.play(); }, 4100);
+        window.setTimeout(function(){
+            intro.style.display = 'none';
+            GODFACE.play();
+        }, 4100);
     }, false);
 
     var title = document.getElementById("title");
@@ -120,7 +121,6 @@ window.onload = function(){
 };
 
 // Google Analytics
-
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-37217138-2']);
 _gaq.push(['_trackPageview']);
