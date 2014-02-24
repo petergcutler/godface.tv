@@ -5,8 +5,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     clean = require('gulp-clean'),
-    concat = require('gulp-concat'),
-    cache = require('gulp-cache');
+    concat = require('gulp-concat');
 
 gulp.task('default', ['styles', 'scripts', 'images']);
 

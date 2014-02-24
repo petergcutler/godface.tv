@@ -2,9 +2,9 @@
   "name": "godface.tv",
   "version": "0.0.1",
   "description": "see the face of god.",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"have you no faith?\" && exit 1"
   },
   "keywords": [
     "godface"
@@ -19,7 +19,13 @@
     "gulp-autoprefixer": "0.0.6",
     "gulp-rename": "~1.1.0",
     "gulp-concat": "~2.1.7",
-    "gulp-cache": "~0.1.2",
     "gulp-jshint": "~1.4.2"
+  },
+  "dependencies": {
+    "express": "~3.4.8"
+  },
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/omoss/godface.tv.git"
   }
 }
